@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+/* Basic styling for the navigation bar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center; /* Aligning the text in the center */
+  padding: 30px 0; /* Increased vertical padding */
+}
+
+.navbar a {
+  display: inline-block; /* Displaying links in a line */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px; /* Adjusted padding */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #666;
+}
+
+.content {
+  text-align: center; /* Aligning content in the center */
+  padding: 20px; /* Adding padding to the content */
+}
+
+.subcontent {
+  margin-bottom: 40px; /* Adding space between subcontent sections */
+  text-align: center; /* Aligning subcontent in the center */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #B3C8CF; /* Setting background color of the card */
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="content">
+  <h1>THE TRAGEDY OF FLIGHT: A COMPREHENSIVE CRASH ANALYSIS</h1>
+  <img src="{{ url_for('static', filename='airplane_image.jpg') }}" alt="Sub Image 1" style="width: 70%;">
+  <p>The tragic crash of Air France 447 (AF447) in 2009 sent shock waves around the world. The loss was difficult to understand given the remarkable safety record of commercial aviation. How could a well-trained crew flying a modern airliner so abruptly lose control of their aircraft during a routine flight.</p>
+  <div class="subcontent">
+    <h2>DASHBOARD</h2>
+    <img src="{{ url_for('static', filename='dashboard1.png') }}" alt="Sub Image 1" style="width: 60%;">
+    <h3>DASHBOARD</h3>
+    <img src="{{ url_for('static', filename='dashboard2.png') }}" alt="Sub Image 1" style="width: 60%;">
+    
+    <p>The main use of a dashboard is to show a comprehensive overview of data from different sources. Dashboards are useful for monitoring, measuring, and analyzing relevant data in key areas.</p>
+  </div>
+  
+<div class="subcontent">
+    <h2>STORY</h2>
+    <img src="{{ url_for('static', filename='story1.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story2.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story3.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story4.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story5.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story6.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story7.png') }}" alt="Sub Image 2" style="width: 20%;">
+    <img src="{{ url_for('static', filename='story8.png') }}" alt="Sub Image 2" style="width: 20%;">
+
+    <p>A Tableau dashboard is a collection of charts assembled on a single view, whereas a story is a collection of charts or dashboards assembled on multiple views. The views in a story are logically and linearly connected to convey the progression of a data story..</p>
+  </div>
+ 
+  <div class="subcontent">
+    <h2>Subheading 3</h2>
+    <img src="{{ url_for('static', filename='donutchart.png') }}" alt="Sub Image 3" style="width: 40%;">
+    <p>A donut chart in Tableau is a type of data visualization that resembles a pie chart with a hole in the center. It displays data as segmented rings, making visualizing proportions and comparisons within a dataset easy..</p>
+  </div>
+  
+  <div class="subcontent">
+    <h2>Subheading 4</h2>
+    <img src="{{ url_for('static', filename='funnelchart.png') }}" alt="Sub Image 4" style="width: 40%;">
+    <p>One such feature in data visualization is the tableau funnel chart. Unlike other tools, tableau allows the user to merge different dimensions through calculated fields and make a simple-looking presentation more intuitive. Funnel charts provide a great way to represent complex data fields interacting with each other.</p>
+  </div>
+  
+  <div class="subcontent">
+    <h2>Subheading 5</h2>
+    <img src="{{ url_for('static', filename='heatmap.png') }}" alt="Sub Image 5" style="width: 40%;">
+    <p>Heatmaps present patterns, trends, and relationships within the data. They use color and size from two on the same or different measures. For example, while using color to help identify changes to a measure in a heatmap, the creator might reinforce its importance by keying the same measure to size.</p>
+  </div>
+  
+  <div class="subcontent">
+    <h2>Subheading 6</h2>
+    <img src="{{ url_for('static', filename='motionchart.png') }}" alt="Sub Image 6" style="width: 40%;">
+    <p>Motion charts provide mechanisms for mapping ordinal, nominal and quantitative variables onto time, 2D coordinate axes, size, colors, glyphs and appearance characteristics, which facilitate the interactive display of multidimensional and temporal data..</p>
+  </div>
+  <div class="subcontent">
+    <h2>Subheading 7</h2>
+    <img src="{{ url_for('static', filename='treemap.png') }}" alt="Sub Image 6" style="width: 40%;">
+    <p>The treemap functions as a visualization composed of nested rectangles. These rectangles represent certain categories within a selected dimension and are ordered in a hierarchy, or “tree.” Quantities and patterns can be compared and displayed in a limited chart space. Treemaps represent part to whole relationships..</p>
+  </div>
+  <div class="subcontent">
+    <h2>Subheading 8</h2>
+    <img src="{{ url_for('static', filename='waterfall.png') }}" alt="Sub Image 6" style="width: 40%;">
+    <p>Waterfall Chart is visualizing the cumulative effect of measures over dimensions. It also can show the contribution of growth and decline by each member in dimensions. Also, Waterfall charts display the cumulative effect of sequential positive and negative values.</p>
+  </div>
+
+  <div class="card">
+    <h2>Team Members</h2>
+    <ul>
+      <li>Polisetti Prudhvi Tirupati Rao</li>
+      <li>Pereddy Deepika</li>
+      <li>Penta Naveen Sai</li>
+      <li>Pentakota Likhitha priya</li>
+      <li>Patnala Raju</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <br>
+</div>
+
+</body>
+</html>
